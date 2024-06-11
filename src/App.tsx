@@ -1,7 +1,7 @@
 import GlobalStyles from "./styles/global"
 
-import Root from "./routes/root"
-import Footer from "./Footer/Footer.jsx"
+import Root from "./components/routes/root"
+import Footer from "./components/Footer/Footer.jsx"
 
 function App() {
 
