@@ -1,13 +1,13 @@
 
 import React from 'react'
 
-import Produtos from '../components/Produtos/Produtos'
+import Products from '../components/Products/Products'
 
 const Home = () => {
   return (
     <div>
       <h2>Welcome to the jungle</h2>
-      <Produtos />
+      <Products />
     </div>
   )
 }
