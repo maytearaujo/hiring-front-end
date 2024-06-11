@@ -1,11 +1,15 @@
 import GlobalStyles from "./styles/global"
 
+import Root from "./routes/root"
+import Footer from "./Footer/Footer.jsx"
+
 function App() {
 
   return (
     <>
     <GlobalStyles />
-      <h1>Olá mundo</h1>
+    <Root />
+    <Footer />
     </>
   )
 }
