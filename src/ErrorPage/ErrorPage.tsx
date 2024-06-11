@@ -1,6 +1,7 @@
 import { useRouteError } from "react-router-dom";
 import React from 'react'
 
+
 const ErrorPage = () => {
   const error = useRouteError();
   console.error(error);
@@ -12,7 +13,7 @@ const ErrorPage = () => {
       <p>
         <i>{error.statusText || error.message}</i>
       </p>
-      <img src="./error.jpg" alt="" />
+      <img src="./error.jpg" alt="Imagem como o número 404 e algumas nuvens simbolizando erro na página" />
     </div>
   )
 }

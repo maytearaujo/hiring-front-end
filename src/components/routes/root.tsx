@@ -1,26 +1,32 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
+import * as S from './rootStyles'
+
 const root = () => {
   return (
     <>
-      <nav>
+      <S.Nav>
         <ul>
           <li>
-            <a href={`/`}>Home</a>
+            <Link to={'/'}>Home</Link>
+            {/* <a href={`/`}>Home</a> */}
             {/* <Link to={`contacts/1`}>Your Name</Link> */}
           </li>
           <li>
-            <a href={`/about/`}>About</a>
+            <Link to={`/about`}>About</Link>
           </li>
           <li>
-            <a href={`/contact`}>Contact</a>
+            <Link to={`/contact`}>Contact</Link>
           </li>
           <li>
-            <a href={`/shop/`}>Shop</a>
+            <Link to={`/shop`}>Shop</Link>
           </li>
+          {/* <li>
+            <Link to={`/error`}>Shop</Link>
+          </li> */}
         </ul>
-      </nav>
+      </S.Nav>
       <div id="detail"></div>
     </>
   )
