@@ -7,7 +7,7 @@ import {
   
 import App from './App.tsx'
 import ErrorPage from './ErrorPage/ErrorPage.tsx';
-import Home from './Home/Home.jsx'
+import Home from './Home/Home.tsx'
 
 const router = createBrowserRouter([
   {
