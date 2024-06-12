@@ -32,7 +32,7 @@ export const DivProduct = styled.div`
         padding: .5rem;
     }
 
-    div p:nth-child(3) {
+    div p:nth-child(4) {
         font-weight: 700;
     }    
 `
