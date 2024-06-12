@@ -9,10 +9,10 @@ const ErrorPage = () => {
     <div>
       <h1>Oops!</h1>
       <p>Sorry, an unexpected error has occurred.</p>
-      <p>
+      {error ?(<p>
         <i>{error.statusText || error.message}</i>
-      </p>
-      <img src="./error.jpg" alt="Imagem como o número 404 e algumas nuvens simbolizando erro na página" />
+      </p>) : (<p>Unknown error</p>)}
+      <img src="../ErrorPage/error.jpg" alt="Imagem como o número 404 e algumas nuvens simbolizando erro na página" />
     </div>
   )
 }
