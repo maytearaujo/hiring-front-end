@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+
+
 import Products from '../components/Products/Products';
 import SearchInput from '../components/SearchInput/SearchInput';
 
@@ -10,6 +12,8 @@ const Home = () => {
   const [products, setProducts] = useState([]);
   const [allProducts, setAllProducts] = useState([]);
   const api = 'https://62d742f351e6e8f06f1a83da.mockapi.io/api/produtos'
+  
+
 
   useEffect(() => {
     const fetchAllProducts = async () => {
@@ -40,7 +44,7 @@ const Home = () => {
 
   const fetchSearchProducts = async (value) => {
     try {
-      const response = await axios.get(`${api}?desciption=${value}|name=${value}`);
+      const response = await axios.get(`${api}?name=${value}|desciption=${value}`);
       setProducts(response.data);
     } catch (error) {
       console.error(error);

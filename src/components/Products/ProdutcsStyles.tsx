@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
 export const DivProducts = styled.main`
-
-    border: solid purple;
-
+    background-color: #fffafa ;
 `
 
 export const DivProduct = styled.div`
@@ -14,11 +12,9 @@ export const DivProduct = styled.div`
     justify-content: space-around;
     padding-top: 1rem;
     row-gap: 2rem;
-    /* border: solid green; */
     
     div {
         max-width: 389px;
-        /* border: solid pink; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -38,7 +34,6 @@ export const DivProduct = styled.div`
 `
 
 export const DivAvatar = styled.div`
-    /* border: solid black; */
     display: flex;
     
     

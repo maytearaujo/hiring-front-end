@@ -1,7 +1,15 @@
+import { useState } from "react";
+import { BsFillCartPlusFill, BsFillCartCheckFill } from "react-icons/bs";
 
 import * as S from './ProdutcsStyles'
 
 const Products = ({products}) => {
+    
+    const [cart, setCart] = useState([]);
+    
+    const handleClickProduct = (product) => {
+        
+    }
 
     return (
         <S.DivProducts>
@@ -15,6 +23,17 @@ const Products = ({products}) => {
                             <h3>{product.name}</h3>
                             <p>{product.desciption}</p>
                             <p>{product.price}</p>
+                            <button
+                                onClick={() => handleClickProduct(product)}
+                            >
+                                {
+                                    cart.some((itemCart) => itemCart.id === product.id) ?(
+                                        <BsFillCartCheckFill />
+                                    ) : (
+                                        <BsFillCartPlusFill />
+                                    )
+                                }
+                            </button>
                         </div>
                     ))
                 ) : (
