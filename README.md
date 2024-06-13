@@ -24,4 +24,7 @@
    
     ```bash
     npm install
-     
+
+4. Deploy:
+  
+  https://hiring-front-end-git-development-mayte-araujos-projects.vercel.app

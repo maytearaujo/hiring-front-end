@@ -3,13 +3,23 @@ import { BsFillCartPlusFill, BsFillCartCheckFill } from "react-icons/bs";
 
 import * as S from './ProdutcsStyles'
 
+type TypeProduct = {
+    id: string;
+    price: string;
+    desciption: string;
+    name: string;
+    avatar: string;
+
+}
+
+
 const Products = ({products}) => {
     
-    const [cart, setCart] = useState([]);
+    // const [cart, setCart] = useState([]);
     
-    const handleClickProduct = (product) => {
+    // const handleClickProduct = (product) => {
         
-    }
+    // }
 
     return (
         <S.DivProducts>
@@ -23,7 +33,7 @@ const Products = ({products}) => {
                             <h3>{product.name}</h3>
                             <p>{product.desciption}</p>
                             <p>{product.price}</p>
-                            <button
+                            {/* <button
                                 onClick={() => handleClickProduct(product)}
                             >
                                 {
@@ -33,7 +43,7 @@ const Products = ({products}) => {
                                         <BsFillCartPlusFill />
                                     )
                                 }
-                            </button>
+                            </button> */}
                         </div>
                     ))
                 ) : (
