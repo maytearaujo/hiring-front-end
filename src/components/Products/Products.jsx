@@ -1,16 +1,7 @@
-import { useState } from "react";
-import { BsFillCartPlusFill, BsFillCartCheckFill } from "react-icons/bs";
+// import { useState } from "react";
+// import { BsFillCartPlusFill, BsFillCartCheckFill } from "react-icons/bs";
 
 import * as S from './ProdutcsStyles'
-
-type TypeProduct = {
-    id: string;
-    price: string;
-    desciption: string;
-    name: string;
-    avatar: string;
-
-}
 
 
 const Products = ({products}) => {

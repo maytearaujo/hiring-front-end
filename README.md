@@ -3,7 +3,7 @@
 
 <div align="center">
 
-  [![TS](https://img.shields.io/badge/Feito%20com-TypeScript-F6D8C6)](#) 
+  [![TS](https://img.shields.io/badge/Feito%20com-Javacript-F6D8C6)](#) 
   [![React](https://img.shields.io/badge/Feito%20com-React-F6D8C6)](#) 
   [![HTML](https://img.shields.io/badge/Feito%20com-HTML-F6D8C6)](#) 
   
