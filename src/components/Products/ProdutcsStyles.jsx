@@ -1,7 +1,17 @@
 import styled from "styled-components";
 
 export const DivProducts = styled.main`
-    background-color: #fffafa ;
+    background-color: #fffafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+
+    button {
+        width: 10rem;
+        height: 2.5rem;
+        border: #aeacac;
+        border-radius: 5px;
+    }
 `
 
 export const DivProduct = styled.div`

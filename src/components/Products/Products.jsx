@@ -1,22 +1,27 @@
-// import { useState } from "react";
+import { useState } from "react";
 // import { BsFillCartPlusFill, BsFillCartCheckFill } from "react-icons/bs";
 
 import * as S from './ProdutcsStyles'
 
 
-const Products = ({products}) => {
-    
+const Products = ({ products }) => {
+
     // const [cart, setCart] = useState([]);
-    
+
     // const handleClickProduct = (product) => {
-        
+
     // }
+    const [visible, setVisible] = useState(3);
+
+    const showMoreItems = () => {
+        setVisible((prevValue) => prevValue + 3);
+    }
 
     return (
         <S.DivProducts>
             <S.DivProduct>
                 {products.length > 0 ? (
-                    products.map((product) => (
+                    products.slice(0, visible).map((product) => (
                         <div key={product.id}>
                             <S.DivAvatar>
                                 <img src={product.avatar} alt={product.name} />
@@ -42,7 +47,9 @@ const Products = ({products}) => {
                         <span>Nenhuma consulta encontrada</span>
                     </div>
                 )}
+
             </S.DivProduct>
+            <button onClick={showMoreItems}>See More...</button>
 
         </S.DivProducts>
     )
